@@ -1,0 +1,32 @@
+{
+  "name": "poesiainfantil",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "clear": "node node_modules/gh-pages/bin/gh-pages-clean.js",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "npm run build && vite preview",
+    "deploy": "npm run clear && npm run build && gh-pages -d dist -r \"https://github.com/retr0mouse/poesiaInfantil.git\" -b gh-pages",
+    "init-deploy": "npm run build && gh-pages -d dist -b gh-pages -r \"https://github.com/retr0mouse/poesiaInfantil.git\""
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "@typescript-eslint/eslint-plugin": "^7.2.0",
+    "@typescript-eslint/parser": "^7.2.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.6",
+    "gh-pages": "^6.1.1",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0"
+  }
+}
