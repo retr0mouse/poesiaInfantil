@@ -8,7 +8,7 @@ function App() {
       <header>
         <a href="">Sobre nosotros</a>
         <a href="">Novedades</a>
-        <img src="/Logo.svg" alt="" />
+        <img src="/poesiaInfantil/logo.svg" alt="" />
         <a href="">Leer online</a>
         <a href="">Nuestro blog</a>
       </header>
@@ -17,7 +17,7 @@ function App() {
           {articles.map((article, index) => {
             return (
               <article key={index}>
-                <img src={article.image} alt="" />
+                <img src={`/poesiaInfantil/${article.image}`} alt="" />
                 <h2>{article.heading}</h2>
                 <p>{article.description}</p>
               </article>
