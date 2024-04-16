@@ -15,12 +15,14 @@ body {
 }
 
 header {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
   background-color: #f8f9fa;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
 
   .burger_btn {
     display: none;
@@ -38,7 +40,9 @@ header {
 
     .burger_btn {
       display: block;
-      width: 2rem;
+      width: 3rem;
+      border: none;
+      background: none;
     }
 
     .logo_btn {
@@ -49,6 +53,27 @@ header {
       display: none;
     }
   }
+}
+
+.menu {
+  display: none;
+  gap: 1rem;
+
+  .menu_link {
+    text-decoration: none;
+    color: #707070;
+  }
+}
+
+.opened {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 5rem;
+  right: 0;
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-radius: 10px;
 }
 
 main {
@@ -99,8 +124,6 @@ main {
         width: 15rem;
       }
     }
-
-
 
     .posts {
       display: flex;
@@ -166,8 +189,6 @@ main {
       height: 4rem;
     }
   }
-
-  
 
   .videos_container {
     padding: 10rem 0;

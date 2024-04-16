@@ -1,18 +1,47 @@
-import './App.css'
-import articles from './data/articles'
-import posts from './data/posts'
+import { useEffect, useState } from 'react';
+import './App.css';
+import articles from './data/articles';
+import posts from './data/posts';
 
 function App() {
+  const [isMenuOpened, setIsMenuOpened] = useState(false);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    // Clean up the event listener when the component is unmounted
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (windowWidth > 768) {
+      setIsMenuOpened(false);
+    }
+  }, [windowWidth]);
 
   return (
     <>
       <header>
         <a className="header_link" href="">Sobre nosotros</a>
         <a className="header_link" href="">Novedades</a>
-        <img className="logo_btn" src="/poesiaInfantil/logo.svg" alt="" />
+        <a href="/"><img className="logo_btn" src="/poesiaInfantil/logo.svg" alt="" /></a>
         <a className="header_link" href="">Leer online</a>
         <a className="header_link" href="">Nuestro blog</a>
-        <img className="burger_btn" src="/poesiaInfantil/burger.svg" alt="" />
+        <button onClick={() => setIsMenuOpened(!isMenuOpened)} className='burger_btn'><img className="" src="/poesiaInfantil/burger.svg" alt="" /></button>
+        <div className={`menu ${isMenuOpened ? 'opened' : ''}`}>
+          <a className="menu_link" href="">Sobre nosotros</a>
+          <a className="menu_link" href="">Novedades</a>
+          <a className="menu_link" href="">Leer online</a>
+          <a className="menu_link" href="">Nuestro blog</a>
+        </div>
       </header>
       <main>
         <div className="articles_container">
@@ -66,8 +95,8 @@ function App() {
               <p>La poesía desafía la mente de los niños al requerirles que recuerden patrones rítmicos y estructuras líricas, fortaleciendo así su capacidad para retener información de manera efectiva.</p>
             </div>
           </div>
-      </div>
-    </main >
+        </div>
+      </main >
     </>
   )
 }
