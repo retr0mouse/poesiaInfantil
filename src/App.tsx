@@ -7,11 +7,12 @@ function App() {
   return (
     <>
       <header>
-        <a href="">Sobre nosotros</a>
-        <a href="">Novedades</a>
-        <img src="/poesiaInfantil/logo.svg" alt="" />
-        <a href="">Leer online</a>
-        <a href="">Nuestro blog</a>
+        <a className="header_link" href="">Sobre nosotros</a>
+        <a className="header_link" href="">Novedades</a>
+        <img className="logo_btn" src="/poesiaInfantil/logo.svg" alt="" />
+        <a className="header_link" href="">Leer online</a>
+        <a className="header_link" href="">Nuestro blog</a>
+        <img className="burger_btn" src="/poesiaInfantil/burger.svg" alt="" />
       </header>
       <main>
         <div className="articles_container">
@@ -27,7 +28,7 @@ function App() {
           })}
         </div>
         <div className="posts_container">
-          <img src="/poesiaInfantil/postsHeading.svg" alt="" />
+          <img className="posts_heading" src="/poesiaInfantil/postsHeading.svg" alt="" />
           <div className="posts">
             {posts.map((post, index) => {
               return (

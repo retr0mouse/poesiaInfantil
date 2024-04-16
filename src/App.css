@@ -22,9 +22,32 @@ header {
   background-color: #f8f9fa;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
+  .burger_btn {
+    display: none;
+  }
+
   a {
     text-decoration: none;
     color: #707070;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    justify-content: space-between;
+
+    .burger_btn {
+      display: block;
+      width: 2rem;
+    }
+
+    .logo_btn {
+      width: 6rem;
+    }
+
+    .header_link {
+      display: none;
+    }
   }
 }
 
@@ -66,6 +89,18 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    .posts_heading {
+      width: 20rem;
+    }
+
+    @media (max-width: 400px) {
+      .posts_heading {
+        width: 15rem;
+      }
+    }
+
+
 
     .posts {
       display: flex;
@@ -131,6 +166,8 @@ main {
       height: 4rem;
     }
   }
+
+  
 
   .videos_container {
     padding: 10rem 0;
