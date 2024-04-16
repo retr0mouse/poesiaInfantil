@@ -2,11 +2,12 @@ import { useEffect, useState } from 'react';
 import './App.css';
 import articles from './data/articles';
 import posts from './data/posts';
+import { useRef } from 'react';
 
 function App() {
   const [isMenuOpened, setIsMenuOpened] = useState(false);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-
+  const blogRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     const handleResize = () => {
@@ -34,13 +35,18 @@ function App() {
         <a className="header_link" href="">Novedades</a>
         <a href="/"><img className="logo_btn" src="/poesiaInfantil/logo.svg" alt="" /></a>
         <a className="header_link" href="">Leer online</a>
-        <a className="header_link" href="">Nuestro blog</a>
+        <button className="header_link" title='to blog' onClick={() => {
+          blogRef.current?.scrollIntoView({behavior: 'smooth'});
+        }}>Nuestro blog</button>
         <button onClick={() => setIsMenuOpened(!isMenuOpened)} className='burger_btn'><img className="" src="/poesiaInfantil/burger.svg" alt="" /></button>
         <div className={`menu ${isMenuOpened ? 'opened' : ''}`}>
           <a className="menu_link" href="">Sobre nosotros</a>
           <a className="menu_link" href="">Novedades</a>
           <a className="menu_link" href="">Leer online</a>
-          <a className="menu_link" href="">Nuestro blog</a>
+          <button className="menu_link" onClick={() => {
+            blogRef.current?.scrollIntoView({ behavior: 'smooth' });
+            setIsMenuOpened(false);
+          }}>Nuestro blog</button>
         </div>
       </header>
       <main>
@@ -56,7 +62,7 @@ function App() {
             )
           })}
         </div>
-        <div className="posts_container">
+        <div ref={blogRef} className="posts_container">
           <img className="posts_heading" src="/poesiaInfantil/postsHeading.svg" alt="" />
           <div className="posts">
             {posts.map((post, index) => {

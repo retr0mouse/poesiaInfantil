@@ -23,14 +23,20 @@ header {
   background-color: #f8f9fa;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
-
   .burger_btn {
     display: none;
   }
 
-  a {
+  a,
+  button {
+    border: none;
+    background: none;
     text-decoration: none;
     color: #707070;
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+    text-align: start;
   }
 }
 
