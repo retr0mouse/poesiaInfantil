@@ -1,9 +1,107 @@
+@font-face {
+  font-family: 'Brevia';
+  src: url('/fonts/HvDTrial_Brevia-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Brevia';
+  src: url('/fonts/HvDTrial_Brevia-RegularItalic.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Brevia';
+  src: url('/fonts/HvDTrial_Brevia-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Brevia';
+  src: url('/fonts/HvDTrial_Brevia-LightItalic.otf') format('opentype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Brevia';
+  src: url('/fonts/HvDTrial_Brevia-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Brevia';
+  src: url('/fonts/HvDTrial_Brevia-MediumItalic.otf') format('opentype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Brevia';
+  src: url('/fonts/HvDTrial_Brevia-SemiBold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Brevia';
+  src: url('/fonts/HvDTrial_Brevia-SemiBoldItalic.otf') format('opentype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Brevia';
+  src: url('/fonts/HvDTrial_Brevia-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Brevia';
+  src: url('/fonts/HvDTrial_Brevia-BoldItalic.otf') format('opentype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Brevia';
+  src: url('/fonts/HvDTrial_Brevia-Black.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Brevia';
+  src: url('/fonts/HvDTrial_Brevia-BlackItalic.otf') format('opentype');
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Brevia';
+  src: url('/fonts/HvDTrial_Brevia-ExtraBlack.otf') format('opentype');
+  font-weight: 950;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Brevia';
+  src: url('/fonts/HvDTrial_Brevia-ExtraBlackItalic.otf') format('opentype');
+  font-weight: 950;
+  font-style: italic;
+}
+
 :root {
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: "Brevia", sans-serif;
+  font-family: 'Brevia', sans-serif;
 }
 
 body {
@@ -379,5 +477,14 @@ main {
         flex-direction: column;
       }
     }
+  }
+}
+
+footer {
+  h1 {
+    color: #FF55FB;
+    font-weight: bold;
+    font-style: italic;
+    font-family: "Brevia", sans-serif;
   }
 }
