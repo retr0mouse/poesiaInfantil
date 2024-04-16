@@ -36,7 +36,7 @@ function App() {
         <a href="/"><img className="logo_btn" src="/poesiaInfantil/logo.svg" alt="" /></a>
         <a className="header_link" href="">Leer online</a>
         <button className="header_link" title='to blog' onClick={() => {
-          blogRef.current?.scrollIntoView({behavior: 'smooth'});
+          blogRef.current?.scrollIntoView({ behavior: 'smooth' });
         }}>Nuestro blog</button>
         <button onClick={() => setIsMenuOpened(!isMenuOpened)} className='burger_btn'><img className="" src="/poesiaInfantil/burger.svg" alt="" /></button>
         <div className={`menu ${isMenuOpened ? 'opened' : ''}`}>
@@ -103,6 +103,30 @@ function App() {
           </div>
         </div>
       </main >
+      <footer>
+        <div className="footer_content">
+          <h1>ME INTERESA LA POESÍA INFANTIL</h1>
+          <p>Suscríbete para recibir la información más reciente e importantes de poesiainfantil.es, desde novedades hasta ofertas especiales, lanzamientos exclusivos, eventos y más.</p>
+          <div className="email_input">
+            <input type="email" name="email" id="email" placeholder='Dirección de correo electrónico' />
+            <button>ME SUSCRIBO</button>
+          </div>
+          <div className="terms_container">
+            <label>
+              <input type="checkbox" name="terms" id="terms" />
+              <span className="checkmark"></span>
+              Acepto la <b>Política de privacidad</b> poesiainfantil.es
+            </label>
+          </div>
+          <div className="green_line" />
+          <div className="footer_links">
+            <a href="">Política</a>
+            <p>©2024 poesiainfantil.es</p>
+            <a href="">Política de cookies</a>
+          </div>
+        </div>
+        <img src="/poesiaInfantil/footerImage.svg" alt="" />
+      </footer>
     </>
   )
 }

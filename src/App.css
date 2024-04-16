@@ -1,97 +1,97 @@
 @font-face {
-  font-family: 'Brevia';
-  src: url('/fonts/HvDTrial_Brevia-Regular.otf') format('opentype');
+  font-family: "Brevia";
+  src: url("/fonts/HvDTrial_Brevia-Regular.otf") format("opentype");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Brevia';
-  src: url('/fonts/HvDTrial_Brevia-RegularItalic.otf') format('opentype');
+  font-family: "Brevia";
+  src: url("/fonts/HvDTrial_Brevia-RegularItalic.otf") format("opentype");
   font-weight: 400;
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'Brevia';
-  src: url('/fonts/HvDTrial_Brevia-Light.otf') format('opentype');
+  font-family: "Brevia";
+  src: url("/fonts/HvDTrial_Brevia-Light.otf") format("opentype");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Brevia';
-  src: url('/fonts/HvDTrial_Brevia-LightItalic.otf') format('opentype');
+  font-family: "Brevia";
+  src: url("/fonts/HvDTrial_Brevia-LightItalic.otf") format("opentype");
   font-weight: 300;
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'Brevia';
-  src: url('/fonts/HvDTrial_Brevia-Medium.otf') format('opentype');
+  font-family: "Brevia";
+  src: url("/fonts/HvDTrial_Brevia-Medium.otf") format("opentype");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Brevia';
-  src: url('/fonts/HvDTrial_Brevia-MediumItalic.otf') format('opentype');
+  font-family: "Brevia";
+  src: url("/fonts/HvDTrial_Brevia-MediumItalic.otf") format("opentype");
   font-weight: 500;
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'Brevia';
-  src: url('/fonts/HvDTrial_Brevia-SemiBold.otf') format('opentype');
+  font-family: "Brevia";
+  src: url("/fonts/HvDTrial_Brevia-SemiBold.otf") format("opentype");
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Brevia';
-  src: url('/fonts/HvDTrial_Brevia-SemiBoldItalic.otf') format('opentype');
+  font-family: "Brevia";
+  src: url("/fonts/HvDTrial_Brevia-SemiBoldItalic.otf") format("opentype");
   font-weight: 600;
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'Brevia';
-  src: url('/fonts/HvDTrial_Brevia-Bold.otf') format('opentype');
+  font-family: "Brevia";
+  src: url("/fonts/HvDTrial_Brevia-Bold.otf") format("opentype");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Brevia';
-  src: url('/fonts/HvDTrial_Brevia-BoldItalic.otf') format('opentype');
+  font-family: "Brevia";
+  src: url("/fonts/HvDTrial_Brevia-BoldItalic.otf") format("opentype");
   font-weight: 700;
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'Brevia';
-  src: url('/fonts/HvDTrial_Brevia-Black.otf') format('opentype');
+  font-family: "Brevia";
+  src: url("/fonts/HvDTrial_Brevia-Black.otf") format("opentype");
   font-weight: 900;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Brevia';
-  src: url('/fonts/HvDTrial_Brevia-BlackItalic.otf') format('opentype');
+  font-family: "Brevia";
+  src: url("/fonts/HvDTrial_Brevia-BlackItalic.otf") format("opentype");
   font-weight: 900;
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'Brevia';
-  src: url('/fonts/HvDTrial_Brevia-ExtraBlack.otf') format('opentype');
+  font-family: "Brevia";
+  src: url("/fonts/HvDTrial_Brevia-ExtraBlack.otf") format("opentype");
   font-weight: 950;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Brevia';
-  src: url('/fonts/HvDTrial_Brevia-ExtraBlackItalic.otf') format('opentype');
+  font-family: "Brevia";
+  src: url("/fonts/HvDTrial_Brevia-ExtraBlackItalic.otf") format("opentype");
   font-weight: 950;
   font-style: italic;
 }
@@ -101,7 +101,7 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: 'Brevia', sans-serif;
+  font-family: "Brevia", sans-serif;
 }
 
 body {
@@ -481,10 +481,129 @@ main {
 }
 
 footer {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0 5rem;
+
+  .footer_content {
+    width: 40rem;
+    display: flex;
+    flex-direction: column;
+  }
   h1 {
-    color: #FF55FB;
+    color: #ff55fb;
     font-weight: bold;
     font-style: italic;
-    font-family: "Brevia", sans-serif;
+  }
+
+  .email_input {
+    display: flex;
+    gap: 2rem;
+
+    input {
+      width: 20rem;
+      height: 3rem;
+      border: 3px solid #91e523;
+      border-radius: 40px;
+      font-size: 1.2rem;
+      color: #707070;
+      padding: 0.2rem 1.5rem;
+    }
+
+    button {
+      width: 15rem;
+      height: 3.5rem;
+      border: none;
+      border-radius: 40px;
+      background-color: #91e523;
+      color: #fff;
+      padding: 0.7rem 1.5rem;
+      font-size: 1.5rem;
+      font-weight: bold;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  .terms_container {
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    padding-left: 2.5rem;
+
+    /* Hide the browser's default checkbox */
+    input {
+      position: absolute;
+      opacity: 0;
+      height: 0;
+      width: 0;
+    }
+
+    .checkmark {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      height: 25px;
+      width: 25px;
+      border: 4px solid #91E523;
+      border-radius: 7px;
+    }
+
+    /* On mouse-over */
+    :hover input ~ .checkmark {
+      background-color: #cccccc6c;
+    }
+
+    /* When the checkbox is checked */
+    input:checked ~ .checkmark {
+      background-color: #91E523;
+    }
+
+    /* Create the checkmark */
+    :after {
+      content: "";
+      position: absolute;
+      display: none;
+    }
+
+    /* When checked */
+    input:checked ~ .checkmark:after {
+      display: block;
+    }
+
+    /* Checkmark style */
+    .checkmark:after {
+      left: 9px;
+      top: 5px;
+      width: 5px;
+      height: 10px;
+      border: solid white;
+      border-width: 0 3px 3px 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+  }
+
+  .green_line {
+    width: 100%;
+    height: 2px;
+    background-color: #91e523;
+  }
+
+  .footer_links {
+    display: flex;
+    gap: 2rem;
+    justify-content: start;
+    align-items: center;
+
+    a {
+      color: #707070;
+      font-size: 1.2rem;
+    }
   }
 }
+
