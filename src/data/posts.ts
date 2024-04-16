@@ -1,10 +1,10 @@
 const images = [
-    "kidsReading1.jpg",
-    "kidsReading2.jpg",
-    "kidsReading3.jpg",
-    "kidsReading4.jpg",
-    "kidsReading5.jpg",
-    "kidsReading6.jpg"
+    "bookChild1.png",
+    "bookChild2.png",
+    "bookChild3.png",
+    "bookChild4.png",
+    "bookChild5.png",
+    "bookChild6.png"
 ]
 
 const headings = [
