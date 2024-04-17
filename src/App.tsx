@@ -63,7 +63,7 @@ function App() {
           })}
         </div>
         <div ref={blogRef} className="posts_container">
-          <img className="posts_heading" src="/poesiaInfantil/postsHeading.svg" alt="" />
+          <h1 className="posts_heading" >NUESTRO BLOG</h1>
           <div className="posts">
             {posts.map((post, index) => {
               return (

@@ -233,6 +233,13 @@ main {
 
     .posts_heading {
       width: 20rem;
+      margin-bottom: 2rem;
+      font-family: 'Brevia', sans-serif;
+      color: #ff55fb;
+      border: .45rem solid #ff55fb;
+      padding: .3rem 2.5rem;
+      text-align: center;
+      border-radius: 5rem;
     }
 
     @media (max-width: 768px) {
