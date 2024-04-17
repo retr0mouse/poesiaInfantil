@@ -24,7 +24,7 @@ const router = createHashRouter(
         },
         {
           path: "/read",
-          element: <App />,
+          element: <Learn />,
         },
       ]
     }
