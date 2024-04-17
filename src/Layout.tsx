@@ -32,12 +32,12 @@ export default function Layout() {
                 <NavLink className={({ isActive }) => (isActive ? "active " : "") + "header_link"} to="/news">Novedades</NavLink>
                 <NavLink to="/"><img className="logo_btn" src="/poesiaInfantil/logo.svg" alt="" /></NavLink>
                 <NavLink className={({ isActive }) => (isActive ? "active " : "") + "header_link"} to="/read">Leer online</NavLink>
-                <NavLink className={({ isActive }) => (isActive ? "active " : "") + "header_link"} to="/blog">Nuestro blog</NavLink>
+                <NavLink className={({ isActive }) => (isActive ? "active " : "") + "header_link"} to="/learn">Nuestro blog</NavLink>
                 <button onClick={() => setIsMenuOpened(!isMenuOpened)} className='burger_btn'><img className="" src="/poesiaInfantil/burger.svg" alt="" /></button>
                 <div className={`menu ${isMenuOpened ? 'opened' : ''}`}>
                     <NavLink className={({ isActive }) => isActive ? "active " : "" + "menu_link"} to="/about">Sobre nosotros</NavLink>
                     <NavLink className={({ isActive }) => isActive ? "active " : "" + "menu_link"} to="/news">Novedades</NavLink>
-                    <NavLink className={({ isActive }) => isActive ? "active " : "" + "menu_link"} to="/read">Leer online</NavLink>
+                    <NavLink className={({ isActive }) => isActive ? "active " : "" + "menu_link"} to="/learn">Leer online</NavLink>
                     <NavLink className={({ isActive }) => (isActive ? "active " : "") + "header_link"} to="/blog">Nuestro blog</NavLink>
                 </div>
             </header>

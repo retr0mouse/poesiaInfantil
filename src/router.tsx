@@ -4,6 +4,7 @@ import App from './routes/News.tsx'
 import { RouterProvider, createHashRouter } from 'react-router-dom'
 import About from './routes/About.tsx';
 import Layout from './Layout.tsx';
+import Learn from './routes/Learn.tsx';
 
 const router = createHashRouter(
   [
@@ -23,7 +24,7 @@ const router = createHashRouter(
           element: <About />,
         },
         {
-          path: "/read",
+          path: "/learn",
           element: <Learn />,
         },
       ]

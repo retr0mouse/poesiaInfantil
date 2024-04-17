@@ -36,7 +36,7 @@ function App() {
         <NavLink className={({ isActive }) => (isActive ? "active " : "") + "header_link"} to="/about">Sobre nosotros</NavLink>
         <NavLink className={({ isActive }) => (isActive ? "active " : "") + "header_link"} to="/news">Novedades</NavLink>
         <NavLink to="/"><img className="logo_btn" src="/poesiaInfantil/logo.svg" alt="" /></NavLink>
-        <NavLink className={({ isActive }) => (isActive ? "active " : "") + "header_link"} to="/read">Leer online</NavLink>
+        <NavLink className={({ isActive }) => (isActive ? "active " : "") + "header_link"} to="/learn">Leer online</NavLink>
         <button className="header_link" title='to blog' onClick={() => {
           blogRef.current?.scrollIntoView({ behavior: 'smooth' });
         }}>Nuestro blog</button>
@@ -44,7 +44,7 @@ function App() {
         <div className={`menu ${isMenuOpened ? 'opened' : ''}`}>
           <NavLink className={({ isActive }) => isActive ? "active " : "" + "menu_link"} to="/about">Sobre nosotros</NavLink>
           <NavLink className={({ isActive }) => isActive ? "active " : "" + "menu_link"} to="/news">Novedades</NavLink>
-          <NavLink className={({ isActive }) => isActive ? "active " : "" + "menu_link"} to="/read">Leer online</NavLink>
+          <NavLink className={({ isActive }) => isActive ? "active " : "" + "menu_link"} to="/learn">Leer online</NavLink>
           <button className="menu_link" onClick={() => {
             blogRef.current?.scrollIntoView({ behavior: 'smooth' });
             setIsMenuOpened(false);
