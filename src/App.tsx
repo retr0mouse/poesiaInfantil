@@ -3,6 +3,7 @@ import './App.css';
 import articles from './data/articles';
 import posts from './data/posts';
 import { useRef } from 'react';
+import Article from './components/Article';
 
 function App() {
   const [isMenuOpened, setIsMenuOpened] = useState(false);
@@ -53,12 +54,13 @@ function App() {
         <div className="articles_container">
           {articles.map((article, index) => {
             return (
-              <article key={index}>
-                <img src={`/poesiaInfantil/${article.image}`} alt="" />
-                <h2>{article.heading}</h2>
-                <p>{article.description}</p>
-                <a href=""><img src="/poesiaInfantil/greenButton.svg" alt="" /></a>
-              </article>
+              <Article
+                index={index}
+                video={`/poesiaInfantil/${article.video}`}
+                posterImage={`/poesiaInfantil/${article.image}`}
+                heading={article.heading}
+                description={article.description}
+              />
             )
           })}
         </div>

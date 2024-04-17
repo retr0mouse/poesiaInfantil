@@ -13,6 +13,21 @@ const images = [
     'Emotions_PosterImage.png'
 ];
 
+const videos = [
+    'memoria PSD.mp4',
+    'Imaginación time frame - 1.mp4',
+    'Concentración.mp4',
+    'Communication.mp4',
+    'Birdie sings.mp4',
+    'Self-confidence.mp4',
+    'Relaxation.mp4',
+    'Sensitivity.mp4',
+    'Creativity.mp4',
+    'Inspiration - 1.mp4',
+    'Empathy.mp4',
+    'Emotions.mp4'
+]
+
 const headings = [
     'Memoria',
     'Imaginación',
@@ -47,6 +62,7 @@ const articles = headings.map((heading, index) => {
     return {
         heading: heading,
         image: images[index],
+        video: videos[index],
         description: descriptions[index]
     };
 });
