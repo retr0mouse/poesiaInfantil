@@ -51,19 +51,22 @@ function App() {
         </div>
       </header>
       <main>
-        <div className="articles_container">
-          {articles.map((article, index) => {
-            return (
-              <Article
-                index={index}
-                video={`/poesiaInfantil/${article.video}`}
-                posterImage={`/poesiaInfantil/${article.image}`}
-                heading={article.heading}
-                description={article.description}
-              />
-            )
-          })}
+        <div className="articles_background">
+          <div className="articles_container">
+            {articles.map((article, index) => {
+              return (
+                <Article
+                  index={index}
+                  video={`/poesiaInfantil/${article.video}`}
+                  posterImage={`/poesiaInfantil/${article.image}`}
+                  heading={article.heading}
+                  description={article.description}
+                />
+              )
+            })}
+          </div>
         </div>
+
         <div ref={blogRef} className="posts_container">
           <h1 className="posts_heading" >NUESTRO BLOG</h1>
           <div className="posts">
