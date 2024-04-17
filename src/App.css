@@ -181,6 +181,7 @@ header {
 }
 
 main {
+  margin: 0 7rem;
   .articles_container {
     padding: 10rem 0;
     background-image: url("/public/articlesBackground.svg");
@@ -197,7 +198,7 @@ main {
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       border-radius: 20px;
       width: 100%;
-      max-width: 300px;
+      max-width: 250px;
 
       h2 {
         font-size: 1.5rem;
@@ -502,6 +503,22 @@ main {
         flex-direction: column;
       }
     }
+  }
+}
+
+@media (max-width: 1000px) {
+  main {
+    margin: 0 4rem;
+  }
+}
+@media (max-width: 800px) {
+  main {
+    margin: 0 2rem;
+  }
+}
+@media (max-width: 500px) {
+  main {
+    margin: 0;
   }
 }
 
