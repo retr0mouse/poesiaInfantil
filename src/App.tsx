@@ -49,6 +49,7 @@ function App() {
             setIsMenuOpened(false);
           }}>Nuestro blog</button>
         </div>
+
       </header>
       <main>
         <div className="articles_background">
