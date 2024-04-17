@@ -114,7 +114,7 @@ body {
 
 header {
   margin: 0 7rem;
-  max-width: 80rem;
+
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -135,6 +135,10 @@ header {
     padding: 0;
     margin: 0;
     text-align: start;
+  }
+
+  .active {
+    color: #ff55fb;
   }
 }
 
@@ -182,6 +186,9 @@ header {
 
 main {
   margin: 0 7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   .articles_background {
     display: flex;
     flex-direction: column;
@@ -189,6 +196,55 @@ main {
     width: 100%;
     background-image: url("/public/articlesBackground.svg");
     background-size: cover;
+  }
+
+  .team {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    grid-column-gap: 5rem;
+    grid-row-gap: 1rem;
+    width: 100%;
+    max-width: 70rem;
+
+    .team_member {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      box-sizing: border-box;
+      padding: 1rem;
+      background-color: #fff;
+      width: 100%;
+
+      img {
+        max-width: 15rem; 
+        object-fit: cover;
+        border-radius: 100%;
+      }
+
+      h2 {
+        color: #FF55FB;
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .team_member {
+        img {
+          width: 15rem;
+        }
+
+        h2 {
+          font-size: 1rem;
+        }
+
+        p {
+          font-size: 0.8rem;
+        }
+      
+      }
+    }
   }
 
   @media (max-width: 768px) {

@@ -1,9 +1,10 @@
 import { useEffect, useState } from 'react';
-import './App.css';
-import articles from './data/articles';
-import posts from './data/posts';
+import '../App.css';
+import articles from '../data/articles';
+import posts from '../data/posts';
 import { useRef } from 'react';
-import Article from './components/Article';
+import Article from '../components/Article';
+import { NavLink } from 'react-router-dom';
 
 function App() {
   const [isMenuOpened, setIsMenuOpened] = useState(false);
@@ -32,24 +33,23 @@ function App() {
   return (
     <>
       <header>
-        <a className="header_link" href="">Sobre nosotros</a>
-        <a className="header_link" href="">Novedades</a>
-        <a href="/"><img className="logo_btn" src="/poesiaInfantil/logo.svg" alt="" /></a>
-        <a className="header_link" href="">Leer online</a>
+        <NavLink className={({ isActive }) => (isActive ? "active " : "") + "header_link"} to="/about">Sobre nosotros</NavLink>
+        <NavLink className={({ isActive }) => (isActive ? "active " : "") + "header_link"} to="/news">Novedades</NavLink>
+        <NavLink to="/"><img className="logo_btn" src="/poesiaInfantil/logo.svg" alt="" /></NavLink>
+        <NavLink className={({ isActive }) => (isActive ? "active " : "") + "header_link"} to="/read">Leer online</NavLink>
         <button className="header_link" title='to blog' onClick={() => {
           blogRef.current?.scrollIntoView({ behavior: 'smooth' });
         }}>Nuestro blog</button>
         <button onClick={() => setIsMenuOpened(!isMenuOpened)} className='burger_btn'><img className="" src="/poesiaInfantil/burger.svg" alt="" /></button>
         <div className={`menu ${isMenuOpened ? 'opened' : ''}`}>
-          <a className="menu_link" href="">Sobre nosotros</a>
-          <a className="menu_link" href="">Novedades</a>
-          <a className="menu_link" href="">Leer online</a>
+          <NavLink className={({ isActive }) => isActive ? "active " : "" + "menu_link"} to="/about">Sobre nosotros</NavLink>
+          <NavLink className={({ isActive }) => isActive ? "active " : "" + "menu_link"} to="/news">Novedades</NavLink>
+          <NavLink className={({ isActive }) => isActive ? "active " : "" + "menu_link"} to="/read">Leer online</NavLink>
           <button className="menu_link" onClick={() => {
             blogRef.current?.scrollIntoView({ behavior: 'smooth' });
             setIsMenuOpened(false);
           }}>Nuestro blog</button>
         </div>
-
       </header>
       <main>
         <div className="articles_background">
