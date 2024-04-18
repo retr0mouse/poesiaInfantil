@@ -52,6 +52,9 @@ function App() {
         </div>
       </header>
       <main>
+        <div className="banner">
+          {/* blank space */}
+        </div>
         <div className="articles_background">
           <div className="articles_container">
             {articles.map((article, index) => {
@@ -75,9 +78,11 @@ function App() {
               return (
                 <article key={index}>
                   <img src={`/poesiaInfantil/${post.image}`} alt="" />
-                  <h2 className={`${index % 2 ? 'greenHeading' : 'pinkHeading'}`}>{post.heading}</h2>
-                  <p>{post.description}</p>
-                  <a href="">Leer el artículo<img src="/poesiaInfantil/greenButton.svg" alt="" /></a>
+                  <div className='post_text'>
+                    <h2 className={`${index % 2 ? 'greenHeading' : 'pinkHeading'}`}>{post.heading}</h2>
+                    <p>{post.description}</p>
+                    <a href="">Leer el artículo<img src="/poesiaInfantil/greenButton.svg" alt="" /></a>
+                  </div>
                 </article>
               )
             })}
