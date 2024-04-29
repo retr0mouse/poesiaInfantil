@@ -35,7 +35,7 @@ function App() {
       <header>
         <NavLink className={({ isActive }) => (isActive ? "active " : "") + "header_link"} to="/about">Sobre nosotros</NavLink>
         <NavLink className={({ isActive }) => (isActive ? "active " : "") + "header_link"} to="/news">Novedades</NavLink>
-        <NavLink to="/"><img className="logo_btn" src="/poesiaInfantil/logo.svg" alt="" /></NavLink>
+        <NavLink className={"logo_link"} to="/"><img className="logo_btn" src="/poesiaInfantil/logo.svg" alt="" /></NavLink>
         <NavLink className={({ isActive }) => (isActive ? "active " : "") + "header_link"} to="/learn">Leer online</NavLink>
         <button className="header_link" title='to blog' onClick={() => {
           blogRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -112,6 +112,7 @@ function App() {
               <p>La poesía desafía la mente de los niños al requerirles que recuerden patrones rítmicos y estructuras líricas, fortaleciendo así su capacidad para retener información de manera efectiva.</p>
             </div>
           </div>
+          <a className="" href="" ><img src="/poesiaInfantil/pinkMoreButton.svg" alt="" /></a>
         </div>
       </main >
       <footer>
@@ -131,7 +132,6 @@ function App() {
           </div>
           <div className="green_line" />
           <div className="footer_links">
-            <a href="">Política</a>
             <p>©2024 poesiainfantil.es</p>
             <a href="">Política de cookies</a>
           </div>

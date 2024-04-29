@@ -5,6 +5,7 @@ import { RouterProvider, createHashRouter } from 'react-router-dom'
 import About from './routes/About.tsx';
 import Layout from './Layout.tsx';
 import Learn from './routes/Learn.tsx';
+import Diff from './routes/Diff.tsx';
 
 const router = createHashRouter(
   [
@@ -15,6 +16,10 @@ const router = createHashRouter(
     {
       path: "/news",
       element: <App />,
+    },
+    {
+      path: "/diff",
+      element: <Diff />,
     },
     {
       element: <Layout />,

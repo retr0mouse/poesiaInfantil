@@ -46,7 +46,7 @@ const headings = [
 const descriptions = [
     "La poesía desafía la mente de los niños al requerirles que recuerden patrones...",
     "Al sumergirse en el mundo de la poesía, los niños son llevados a paisajes…",
-    "La estructura del lenguaje poético requiere atención y concentración, ayudando...",
+    "La estructura del lenguaje poético requiere atención y concentración, ayudando tehte...",
     "La diversidad léxica de la poesía enriquece el repertorio lingüístico...",
     "La poesía despierta la sensibilidad auditiva de los niños al enseñarles...",
     "La poesía es una herramienta transformadora que...",
