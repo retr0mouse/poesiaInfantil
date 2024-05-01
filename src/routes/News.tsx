@@ -87,7 +87,9 @@ function App() {
               )
             })}
           </div>
-          <a className="more_btn" href="" ><img src="/poesiaInfantil/greenMoreButton.svg" alt="" /></a>
+          <a className="more_btn" href="" >
+            <img src="/poesiaInfantil/greenMoreButton.svg" alt="" />
+          </a>
         </div>
         <div className="videos_container">
           <div className="video">

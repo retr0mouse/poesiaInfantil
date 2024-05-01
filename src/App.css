@@ -484,23 +484,15 @@ main {
     }
 
     .more_btn {
-      width: calc(16rem - 9px);
-      height: 4rem;
-      margin: 4rem 0 6rem 0;
-      position: relative;
-      top: -5px;
-      left: -1.4rem;
+      margin: 2.5rem 0 6rem;
     }
 
     .more_btn img {
-      width: calc(16rem - 9px);
-      height: 4rem;
     }
   }
 
   .videos_container {
-    margin-top: .3rem;
-    padding: 10rem 0 2rem 0;
+    padding: 8.2rem 0 2rem 0;
     background: #ffe815;
     display: flex;
     flex-direction: column;
@@ -803,6 +795,7 @@ footer {
       display: flex;
       align-items: center;
       justify-content: center;
+      font-family: "Brevia", sans-serif;
       width: 16rem;
       height: 3.5rem;
       border: none;
