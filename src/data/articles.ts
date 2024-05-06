@@ -49,7 +49,7 @@ const descriptions = [
     "La estructura del lenguaje poético requiere atención y concentración, ayudando tehte...",
     "La diversidad léxica de la poesía enriquece el repertorio lingüístico...",
     "La poesía despierta la sensibilidad auditiva de los niños al enseñarles...",
-    "La poesía es una herramienta transformadora que...",
+    "La poesía es una herramienta transformadora que...",
     "La belleza y armonía de la poesía ofrecen a los niños un espacio tranquilo...",
     "A través de la poesía, los niños aprenden a identificar y conectar con...",
     "La libertad de expresión que ofrece la poesía inspira a los niños a explorar...",

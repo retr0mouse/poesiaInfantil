@@ -5,7 +5,7 @@ import { RouterProvider, createHashRouter } from 'react-router-dom'
 import About from './routes/About.tsx';
 import Layout from './Layout.tsx';
 import Learn from './routes/Learn.tsx';
-import Diff from './routes/Diff.tsx';
+import Diff, { loader as diffLoader } from './routes/Diff.tsx';
 
 const router = createHashRouter(
   [
@@ -18,8 +18,10 @@ const router = createHashRouter(
       element: <App />,
     },
     {
-      path: "/diff",
+      path: "/diff/:screenSize",
       element: <Diff />,
+      loader: ({ params }) => diffLoader({ params: { screenSize: String(params.screenSize) } }),
+
     },
     {
       element: <Layout />,
