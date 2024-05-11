@@ -121,29 +121,34 @@ function App() {
       </main >
       <footer>
         <div className="footer_container">
-          <div className="footer_content">
-            <h1>ME INTERESA LA POESÍA INFANTIL</h1>
-            <p>Suscríbete para recibir la información más reciente e importantes de poesiainfantil.es, desde novedades hasta ofertas especiales, lanzamientos exclusivos, eventos y más.</p>
-            <div className="email_input">
-              <input type="email" name="email" id="email" placeholder='Dirección de correo electrónico' />
-              <button>ME SUSCRIBO</button>
-            </div>
-            <div className="terms_container">
-              <label>
-                <input type="checkbox" name="terms" id="terms" />
-                <span className="checkmark"></span>
-                Acepto la <b>Política de privacidad</b> poesiainfantil.es
-              </label>
-            </div>
+          <div className="footer_blocks">
+            <div className="footer_content">
+              <h1>ME INTERESA LA POESÍA INFANTIL</h1>
+              <p>Suscríbete para recibir la información más reciente e importantes de poesiainfantil.es, desde novedades hasta ofertas especiales, lanzamientos exclusivos, eventos y más.</p>
+              <div className="email_input">
+                <input type="email" name="email" id="email" placeholder='Dirección de correo electrónico' />
+                <button>ME SUSCRIBO</button>
+              </div>
+              <div className="terms_container">
+                <label>
+                  <input type="checkbox" name="terms" id="terms" />
+                  <span className="checkmark"></span>
+                  Acepto la <b>Política de privacidad</b> poesiainfantil.es
+                </label>
+              </div>
 
+              
+
+            </div>
+            <img src="/poesiaInfantil/footerImage.svg" alt="" />
           </div>
-          <img src="/poesiaInfantil/footerImage.svg" alt="" />
+          <div className="green_line" />
+          <div className="footer_links">
+            <p>©2024 poesiainfantil.es</p>
+            <a href="">Política de cookies</a>
+          </div>
         </div>
-        <div className="green_line" />
-        <div className="footer_links">
-          <p>©2024 poesiainfantil.es</p>
-          <a href="">Política de cookies</a>
-        </div>
+
       </footer>
     </>
   )
