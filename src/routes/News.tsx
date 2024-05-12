@@ -94,8 +94,8 @@ function App() {
           </div>
           <a className="more_btn" href="" >
             <img className="nonwide_btn" src="/poesiaInfantil/greenMoreButton.svg" alt="" />
-            <img className="wide_btn" src="/poesiaInfantil/greenMoreButtonWide.svg" alt="" />
           </a>
+          <img className="wide_btn" src="/poesiaInfantil/greenMoreButtonWide.svg" alt="" />
         </div>
         <div className="videos_container">
           <div className="video">
@@ -120,7 +120,9 @@ function App() {
               <p>La poesía desafía la mente de los niños al requerirles que recuerden patrones rítmicos y estructuras líricas, fortaleciendo así su capacidad para retener información de manera efectiva.</p>
             </div>
           </div>
-          <img className="nonwide_btn" src="/poesiaInfantil/pinkMoreButton.svg" alt="" />
+          <a className="more_btn" href="" >
+            <img className="nonwide_btn" src="/poesiaInfantil/pinkMoreButton.svg" alt="" />
+          </a>
           <img className="wide_btn" src="/poesiaInfantil/pinkMoreButtonWide.svg" alt="" />
         </div>
       </main >
