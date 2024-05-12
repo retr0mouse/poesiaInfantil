@@ -82,15 +82,19 @@ function App() {
                   <img src={`/poesiaInfantil/${post.image}`} alt="" />
                   <div className='post_text'>
                     <h2 className={`${index % 2 ? 'greenHeading' : 'pinkHeading'}`}>{post.heading}</h2>
-                    <p>{post.description}</p>
-                    <a href="">Leer el artículo<img src="/poesiaInfantil/greenButton.svg" alt="" /></a>
+                    <div className="description_container">
+                      <p>{post.description}</p>
+                      <a id="description_button" className="post_button description" href=""><img src="/poesiaInfantil/greenButton.svg" alt="" /></a>
+                    </div>
+                    <a className="post_button" href="">Leer el artículo<img src="/poesiaInfantil/greenButton.svg" alt="" /></a>
                   </div>
                 </article>
               )
             })}
           </div>
           <a className="more_btn" href="" >
-            <img src="/poesiaInfantil/greenMoreButton.png" alt="" />
+            <img className="nonwide_btn" src="/poesiaInfantil/greenMoreButton.svg" alt="" />
+            <img className="wide_btn" src="/poesiaInfantil/greenMoreButtonWide.svg" alt="" />
           </a>
         </div>
         <div className="videos_container">
@@ -116,7 +120,8 @@ function App() {
               <p>La poesía desafía la mente de los niños al requerirles que recuerden patrones rítmicos y estructuras líricas, fortaleciendo así su capacidad para retener información de manera efectiva.</p>
             </div>
           </div>
-          <a className="" href="" ><img src="/poesiaInfantil/pinkMoreButton.png" alt="" /></a>
+          <img className="nonwide_btn" src="/poesiaInfantil/pinkMoreButton.svg" alt="" />
+          <img className="wide_btn" src="/poesiaInfantil/pinkMoreButtonWide.svg" alt="" />
         </div>
       </main >
       <footer>
@@ -136,11 +141,9 @@ function App() {
                   Acepto la <b>Política de privacidad</b> poesiainfantil.es
                 </label>
               </div>
-
-              
-
             </div>
-            <img src="/poesiaInfantil/footerImage.svg" alt="" />
+            <img className="footer_img" src="/poesiaInfantil/footerImage.svg" alt="" />
+            <img className="footer_img_small" src="/poesiaInfantil/footerImageSmall.svg" alt="" />
           </div>
           <div className="green_line" />
           <div className="footer_links">

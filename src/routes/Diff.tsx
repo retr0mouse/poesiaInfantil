@@ -10,6 +10,8 @@ export async function loader({ params }: { params: { screenSize: string } }): Pr
             return "/poesiaInfantil/diff-1200.jpg";
         case "1024":
             return "/poesiaInfantil/diff-1024.jpg";
+        case "640":
+            return "/poesiaInfantil/diff-640.png";
         default:
             return "";
     }
