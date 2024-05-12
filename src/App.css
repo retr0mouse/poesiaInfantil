@@ -561,7 +561,7 @@ main {
           }
 
           .post_text {
-            width: 85%;
+            width: 80%;
             position: relative;
             left: -1rem;
             height: auto;
@@ -573,6 +573,7 @@ main {
 
               p {
                 width: 100%;
+                font-size: .5rem;
               }
             }
 
@@ -583,8 +584,15 @@ main {
             #description_button {
               display: block;
               width: 1.2vw;
+              min-width: 12.3px;
+              min-height: 12.3px;
               margin-left: .3rem;
               align-self: center;
+
+              img {
+                min-height: 12.3px;
+                min-width: 12.3px;
+              }
             }
 
             h2 {
@@ -1044,8 +1052,11 @@ footer {
 
 
       }
+
       .footer_links {
-        /* width: 60%; */
+        margin-left: 0;
+        gap: 0;
+
         p {
           width: 20vw;
           font-size: 1.5vw;
@@ -1060,17 +1071,97 @@ footer {
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 600px) {
   main {
+    .articles_container {
+      padding: 20vw 0;
+      article {
+        width: 80%;
+        height: 60vw;
+        video {
+          width: 30vw;
+          height: auto;
+        }
+        h2 {
+          font-size: 4vw;
+        }
+        p {
+          width: 80%;
+          font-size: 2.8vw;
+        }
+        a {
+          display: none;
+        }
+      }
+    }
     .posts_container {
+      .posts_heading {
+        width: 50vw;
+        height: 6vw;
+        border: 1vw solid #ff55fb;
+        border-radius: 25px;
+        font-size: 4vw;
+      }
       .posts {
         article {
           width: 100%;
+          height: auto;
 
           img {
             width: 100%;
+            height: 60vw;
+          }
+
+          .post_text {
+            h2 {
+              font-size: 4vw;
+            }
+
+            .description_container {
+              width: 110%;
+              p {
+                font-size: 3vw;
+              }
+              #description_button {
+                display: none;
+              }
+            }
           }
         }
+      }
+      .wide_btn {
+        width: 60vw;
+      }
+    }
+    .videos_container {
+      .video, .video:nth-child(2) {
+        width: 70vw;
+        height: auto;
+        .video-wrapper {
+          height: 40vw;
+          img:nth-child(1) {
+            height: 40vw;
+          }
+          .video_background {
+            height: 42vw;
+          }
+          .play-button {
+            width: 8vw;
+          }
+
+        }
+        .text_container {
+          h2 {
+            font-size: 4vw;
+          }
+
+          p {
+            font-size: 2.5vw;
+          }
+        }
+      } 
+      .wide_btn {
+        width: 60vw;
       }
     }
   }
@@ -1078,16 +1169,30 @@ footer {
   footer {
     .footer_container {
       width: 100%;
+
       .footer_blocks {
         .footer_content {
+          h1 {
+            font-size: 4vw;
+          }
+
+          p {
+            font-size: 2vw;
+          }
           input {
             width: 95%;
+            height: 8vw;
+            font-size: 3vw;
           }
+
           button {
             width: 100%;
             margin: .5rem 0;
+            height: 8vw;
+            font-size: 4vw;
           }
         }
+
         .footer_img_small {
           display: none;
         }
