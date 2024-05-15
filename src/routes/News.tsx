@@ -36,7 +36,7 @@ function App() {
         <div className="header_content">
           <NavLink className={({ isActive }) => (isActive ? "active " : "") + "header_link"} to="/about">Sobre nosotros</NavLink>
           <NavLink className={({ isActive }) => (isActive ? "active " : "") + "header_link"} to="/news">Novedades</NavLink>
-          <NavLink className={"logo_link"} to="/"><img className="logo_btn" src="/poesiaInfantil/logo.svg" alt="" /></NavLink>
+          <NavLink className={"logo_link"} to="/"><img className="logo_btn" src="/poesiaInfantil/Logo.svg" alt="" /></NavLink>
           <NavLink className={({ isActive }) => (isActive ? "active " : "") + "header_link"} to="/learn">Leer online</NavLink>
           <button className="header_link" title='to blog' onClick={() => {
             blogRef.current?.scrollIntoView({ behavior: 'smooth' });

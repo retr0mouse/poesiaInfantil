@@ -56,7 +56,7 @@ export default function Layout() {
                             <span className="checkmark"></span>
                             Acepto la <b>Política de privacidad</b> poesiainfantil.es
                         </label>
-                    </div>
+			</div>
                     <div className="green_line" />
                     <div className="footer_links">
                         <a href="">Política</a>
@@ -67,6 +67,5 @@ export default function Layout() {
                 <img src="/poesiaInfantil/footerImage.svg" alt="" />
             </footer>
         </>
-
     );
 }
