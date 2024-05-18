@@ -181,36 +181,30 @@ header {
 
     header {
         .header_content {
-            margin-top: .4rem;
-            align-items: center;
+            height: 15vw;
             width: 100%;
 
             .logo_link {
-                margin-left: 2.2rem;
-                width: 22vw;
+                height: 100%;
+                width: 30vw;
+                margin-left: 4vw;
 
                 img {
                     left: 0;
                     top: 0;
-                    width: 22vw;
+                    height: 100%;
+                    width: 30vw;
                     margin: 0;
                 }
             }
 
-            .burger_btn {
-                margin-right: 3vw;
-                padding: 2vw;
-                width: 10vw;
-
-                img {
-                    width: 100%;
-                }
-            }
         }
 
         .burger_btn {
+            margin-right: 4vw;
+            padding: 2vw;
+            height: 100%;
             display: block;
-            width: 1vw;
             border: none;
             background: none;
         }
@@ -370,7 +364,7 @@ main {
             gap: 2vw;
             article {
                 width: 27vw;
-                height: 35vw;
+                height: 100%;
                 margin-bottom: .5rem;
                 border-radius: 3vw;
 
@@ -388,11 +382,20 @@ main {
                 p {
                     font-size: 1.8vw;
                     width: 100%;
+                    height: 10vw;
                 }
 
                 a {
+                    width: 1.2vw;
+                    min-height: 12.3px;
+                    min-width: 12.3px;
                     align-self: flex-end;
-                    margin-right: 2vw;
+                    position: relative;
+                    right: 2vw;
+                    img {
+                        min-height: 12.3px;
+                        min-width: 12.3px;
+                    }
                 }
             }
         }
@@ -530,7 +533,6 @@ main {
                 width: 7rem;
 
             }
-
             .wide_btn {
                 display: block;
                 width: 35vw;
@@ -585,7 +587,7 @@ main {
                             min-width: 12.3px;
                             min-height: 12.3px;
                             margin-left: .3rem;
-                            align-self: center;
+                            align-self: flex-end;
 
                             img {
                                 min-height: 12.3px;
