@@ -535,7 +535,7 @@ main {
             }
             .wide_btn {
                 display: block;
-                width: 35vw;
+                width: 60vw;
             }
 
             .nonwide_btn {
@@ -734,13 +734,14 @@ main {
 
     @media (max-width: 770px) {
         .videos_container {
+            padding: 20vw 0 10vw 0;
             .nonwide_btn {
                 display: none;
             }
 
             .wide_btn {
                 display: block;
-                width: 35vw;
+                width: 60vw;
             }
 
             .video,
@@ -750,22 +751,22 @@ main {
 
                 .video-wrapper {
                     width: 100%;
-                    height: 30vw;
+                    height: 100%;
 
                     img:nth-child(1) {
                         width: 100%;
-                        height: 30vw;
+                        height: 100%;
                         left: 0;
                     }
 
                     .play-button {
                         left: 50%;
-                        width: 6vw;
+                        width: 8vw;
                     }
 
                     .video_background {
                         width: 97%;
-                        height: 33vw;
+                        height: calc(100% + 0vw);
                         left: .4rem;
                     }
                 }
