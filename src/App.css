@@ -549,13 +549,13 @@ main {
                 flex-wrap: wrap;
 
                 article {
-                    height: 15rem;
+                    height: 100%;
                     border: none;
-                    width: 13rem;
+                    width: 40vw;
 
 
                     img {
-                        width: 13rem;
+                        width: 40vw;
                         height: 100%;
                         border-radius: 20px;
                     }
@@ -563,7 +563,7 @@ main {
                     .post_text {
                         width: 80%;
                         position: relative;
-                        left: -1rem;
+                        left: -2vw;
                         height: auto;
 
                         .description_container {
