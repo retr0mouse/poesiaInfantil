@@ -126,7 +126,7 @@ function App() {
           <img className="wide_btn" src="/poesiaInfantil/pinkMoreButtonWide.svg" alt="" />
         </div>
       </main >
-{/*      <footer>
+      <footer>
         <div className="footer_container">
           <div className="footer_blocks">
             <div className="footer_content">
@@ -153,9 +153,7 @@ function App() {
             <a href="">Política de cookies</a>
           </div>
         </div>
-
       </footer>
-      */}
     </>
   )
 }
