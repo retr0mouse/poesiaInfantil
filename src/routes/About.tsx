@@ -9,6 +9,12 @@ export default function About() {
                         <div key={index} className="team_member">
                             <img src={`/poesiaInfantil/${member.image}`} alt={member.name} />
                             <div className="team_member_info">
+                                <h2>{member.image}</h2>
+                                <h2>{member.name}</h2>
+                                <h2>{member.name}</h2>
+                                <h2>{member.name}</h2>
+                                <h2>{member.name}</h2>
+                                <h2>{member.name}</h2>
                                 <h2>{member.name}</h2>
                                 <p>{member.description}</p>
                             </div>

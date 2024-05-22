@@ -93,9 +93,9 @@ function App() {
             })}
           </div>
           <a className="more_btn" href="" >
-            <img className="nonwide_btn" src="/poesiaInfantil/greenMoreButton.svg" alt="" />
+            <img className="nonwide_btn" src="/poesiaInfantil/greenMoreButton.png" alt="" />
           </a>
-          <img className="wide_btn" src="/poesiaInfantil/greenMoreButtonWide.svg" alt="" />
+          <img className="wide_btn" src="/poesiaInfantil/greenMoreButtonWide.png" alt="" />
         </div>
         <div className="videos_container">
           <div className="video">
@@ -121,9 +121,9 @@ function App() {
             </div>
           </div>
           <a className="more_btn" href="" >
-            <img className="nonwide_btn" src="/poesiaInfantil/pinkMoreButton.svg" alt="" />
+            <img className="nonwide_btn" src="/poesiaInfantil/pinkMoreButton.png" alt="" />
           </a>
-          <img className="wide_btn" src="/poesiaInfantil/pinkMoreButtonWide.svg" alt="" />
+          <img className="wide_btn" src="/poesiaInfantil/pinkMoreButtonWide.png" alt="" />
         </div>
       </main >
       <footer>
