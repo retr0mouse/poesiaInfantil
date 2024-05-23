@@ -989,9 +989,7 @@ footer {
     }
 
     .footer_links {
-        margin-left: 5vw;
         align-self: flex-start;
-        margin-top: 1vw;
         display: flex;
         flex-direction: row;
         align-items: center;
