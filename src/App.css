@@ -690,7 +690,7 @@ main {
                 border-radius: 2vw;
                 position: absolute;
                 top: -1.2vw;
-                left: 1.6vw;
+                left: 2.5vw;
                 width: 40.7vw;
                 height: 26vw;
                 transform: rotate(5deg);
@@ -701,7 +701,7 @@ main {
             img {
                 position: relative;
                 z-index: 0;
-                left: 1vw;
+                left: 2vw;
                 top: 0vw;
                 width: 42vw;
                 height: 24vw;
