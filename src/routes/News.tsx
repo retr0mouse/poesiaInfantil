@@ -44,8 +44,11 @@ function App() {
           <button onClick={() => setIsMenuOpened(!isMenuOpened)} className='burger_btn'><img className="" src="/poesiaInfantil/burger.svg" alt="" /></button>
           <div className={`menu ${isMenuOpened ? 'opened' : ''}`}>
             <NavLink className={({ isActive }) => isActive ? "active " : "" + "menu_link"} to="/about">Sobre nosotros</NavLink>
+            <div className={"menu_divider"}/>
             <NavLink className={({ isActive }) => isActive ? "active " : "" + "menu_link"} to="/news">Novedades</NavLink>
+            <div className={"menu_divider"}/>
             <NavLink className={({ isActive }) => isActive ? "active " : "" + "menu_link"} to="/learn">Leer online</NavLink>
+            <div className={"menu_divider"}/>
             <button className="menu_link" onClick={() => {
               blogRef.current?.scrollIntoView({ behavior: 'smooth' });
               setIsMenuOpened(false);
