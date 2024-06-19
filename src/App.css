@@ -654,11 +654,11 @@ main {
         width: 100%;
 
         .more_btn {
-            width: 16vw;
+            width: 20rem;
             margin-top: 3vw;
 
             img {
-                width: 16vw;
+                width: 20rem;
             }
         }
 
@@ -713,7 +713,6 @@ main {
                 top: 0vw;
                 width: 50rem;
                 height: 28.8rem;
-                /* 460.79px */
             }
 
             .play-button {
@@ -722,7 +721,7 @@ main {
                 left: calc(50% + 0rem);
                 transform: translate(-50%, -50%);
                 z-index: 1;
-                width: 4.5vw;
+                width: 5.5rem;
             }
 
             .text_container {
@@ -896,7 +895,7 @@ footer {
             height: 3rem;
             border: .3vw solid #91e523;
             border-radius: 2vw;
-            font-size: 1vw;
+            font-size: 1.3rem;
             color: #707070;
             padding: .1vw 1vw;
         }
