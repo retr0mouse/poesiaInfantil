@@ -419,16 +419,13 @@ main {
                 }
 
                 a {
-                    width: 1.2vw;
-                    min-height: 12.3px;
-                    min-width: 12.3px;
+                    width: 3vw;
+                    height: 3vw;
                     align-self: flex-end;
                     position: relative;
-                    right: 2vw;
-
                     img {
-                        min-height: 12.3px;
-                        min-width: 12.3px;
+                        width: 3vw;
+                        height: 3vw;
                     }
                 }
             }
@@ -775,7 +772,7 @@ main {
                 width: 60vw;
             }
 
-            .video,
+            .video:nth-child(1),
             .video:nth-child(2) {
                 width: 80%;
                 flex-direction: column;
